@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Header />
-      <h1>faoiwe</h1>
+      <h1 className="font-en tracking-en">faoiwe</h1>
     </div>
   );
 }
