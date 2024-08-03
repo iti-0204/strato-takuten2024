@@ -1,11 +1,21 @@
 import React from "react";
 import { BiChevronRight } from "react-icons/bi";
 
-const Button = () => {
+const Button = ({ fontSize, margin, height, width }) => {
+  console.log(fontSize);
   return (
-    <button className="bg-gradient-to-br from-primary to-buttonGrad w-48 h-12 text-white text-xl font-en tracking-en rounded">
+    <button
+      className={
+        "bg-gradient-to-br from-primary to-buttonGrad text-white font-en tracking-en rounded " +
+        fontSize +
+        height +
+        width
+      }
+    >
       Works
-      <BiChevronRight className="inline-block ml-6 text-2xl font-bold align-text-top" />
+      <BiChevronRight
+        className={"inline-block text-2xl font-bold align-text-top " + margin}
+      />
     </button>
   );
 };
