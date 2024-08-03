@@ -5,6 +5,7 @@ module.exports = {
     // カラー設定
     colors: {
       primary: "#FC840D",
+      buttonGrad: "#F7D4AA",
       black: "#000000",
       gray: "#9D9791",
       white: "#FFFFFF",
