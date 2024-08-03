@@ -1,5 +1,4 @@
-@import url("https://fonts.google.com/specimen/Outfit");
-@import url("https://fonts.google.com/specimen/Zen+Kaku+Gothic+New?query=zen+kaku");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Zen+Kaku+Gothic+New:wght@500&display=swap');
 
 @tailwind base;
 @tailwind components;
