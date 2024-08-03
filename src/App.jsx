@@ -5,6 +5,7 @@ import Button from "./components/Button";
 function App() {
   return (
     <div>
+      <img src="/images/background.png" alt="aa" className="w-full h-screen" />
       {/* <Header /> */}
       <Button />
       <h1 className="font-en tracking-en">faoiwe</h1>
