@@ -16,11 +16,21 @@ module.exports = {
       jp: ["Zen Kaku Gothic New"],
     },
     //フォントサイズ
-    // fontSize: {},
+    // fontSize: {
+    //   xs: "10px",
+    // },
     // 字間
     letterSpacing: {
       en: ".1em",
       jp: ".04em",
+    },
+    extend: {
+      fontSize: {
+        xxs: "10px",
+      },
+      width: {
+        38: "154px",
+      },
     },
   },
   plugins: [],
