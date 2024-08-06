@@ -27,13 +27,28 @@ module.exports = {
         titleGrad1: "#FFAF5F",
         titleGrad2: "#F5D37D",
       },
+
       fontSize: {
         xxs: "10px",
         "10xl": "104px",
       },
+
       width: {
         38: "154px",
       },
+
+      height: {
+        title: "131px",
+      },
+
+      inset: {
+        title: "65%",
+      },
+
+      translate: {
+        title: "-50%",
+      },
+
       backgroundImage: {
         // fv: "url('images/background.png')",
         fv: "url('../public/images/background.png')",
