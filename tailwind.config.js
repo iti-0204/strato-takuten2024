@@ -35,10 +35,13 @@ module.exports = {
 
       width: {
         38: "154px",
+        card: "476px",
       },
 
       height: {
         title: "131px",
+        card: "516px",
+        cardImg: "242px",
       },
 
       inset: {
@@ -53,6 +56,10 @@ module.exports = {
         // fv: "url('images/background.png')",
         fv: "url('../public/images/background.png')",
         "footer-texture": "url('/img/footer-texture.png')",
+      },
+
+      boxShadow: {
+        card: "0 0 10.7px 0 rgba(226, 166, 28, 1.0)",
       },
     },
   },

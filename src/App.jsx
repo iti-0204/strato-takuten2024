@@ -1,6 +1,7 @@
 import "./App.css";
 import Button from "./components/Button";
-import Title from "./components/Title";
+import Card from "./components/Card";
+// import Title from "./components/Title";
 // import Header from "./components/Header";
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       {/* <Header /> */}
       <Button type={"UI"} />
       <h1 className="font-en tracking-en">faoiwe</h1>
-      <Title type={"center"}/>
+      {/* <Title type={"center"}/> */}
+      <Card />
     </div>
   );
 }
