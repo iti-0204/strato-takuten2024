@@ -12,7 +12,7 @@ function App() {
       {/* <Header /> */}
       <Button type={"UI"} />
       <h1 className="font-en tracking-en">faoiwe</h1>
-      <Title />
+      <Title type={"center"}/>
     </div>
   );
 }
