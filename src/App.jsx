@@ -14,7 +14,13 @@ function App() {
       <Button type={"UI"} />
       <h1 className="font-en tracking-en">faoiwe</h1>
       {/* <Title type={"center"}/> */}
-      <Card />
+      <Card
+        team={"4Mチーム"}
+        title={"Pure-fit"}
+        caption={
+          "Lorem ipsum, dolor sit ametconsecteturadipisicingelit. Reprehenderitesse perferendis molestiae harum atque non modi optio fugiat delenititempore repudiandae voluptas vitae error veritatis obcaecati nihil,saepe beatae? Itaque."
+        }
+      />
     </div>
   );
 }
