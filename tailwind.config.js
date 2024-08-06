@@ -2,14 +2,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    // カラー設定
-    colors: {
-      primary: "#FC840D",
-      buttonGrad: "#F7D4AA",
-      black: "#000000",
-      gray: "#9D9791",
-      white: "#FFFFFF",
-    },
     // フォント
     fontFamily: {
       en: ["Outfit"],
@@ -25,8 +17,19 @@ module.exports = {
       jp: ".04em",
     },
     extend: {
+      // カラー設定
+      colors: {
+        primary: "#FC840D",
+        buttonGrad: "#F7D4AA",
+        black: "#000000",
+        gray: "#9D9791",
+        white: "#FFFFFF",
+        titleGrad1: "#FFAF5F",
+        titleGrad2: "#F5D37D",
+      },
       fontSize: {
         xxs: "10px",
+        "10xl": "104px",
       },
       width: {
         38: "154px",
