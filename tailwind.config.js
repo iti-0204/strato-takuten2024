@@ -31,6 +31,11 @@ module.exports = {
       width: {
         38: "154px",
       },
+      backgroundImage: {
+        // fv: "url('images/background.png')",
+        fv: "url('../public/images/background.png')",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
     },
   },
   plugins: [],

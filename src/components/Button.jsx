@@ -56,6 +56,8 @@ const Button = ({ type }) => {
           <BiChevronRight className={"inline-block text-2xl font-bold ml-3"} />
         </button>
       );
+
+    default:
   }
 };
 
