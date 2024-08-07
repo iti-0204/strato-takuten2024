@@ -22,7 +22,14 @@ function App() {
           "Lorem ipsum, dolor sit ametconsecteturadipisicingelit. Reprehenderitesse perferendis molestiae harum atque non modi optio fugiat delenititempore repudiandae voluptas vitae error veritatis obcaecati nihil,saepe beatae? Itaque."
         }
       /> */}
-      <Flow />
+      <Flow
+        num={"01"}
+        title={"ブレインストーミング"}
+        caption={
+          "数名のチームで１つのテーマに対し、お互いに意見を出し合い<br/>たくさんのアイデアを生産し、問題解決に結びつける方法"
+        }
+        img={"/images/background.png"}
+      />
     </div>
   );
 }

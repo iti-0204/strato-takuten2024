@@ -27,6 +27,11 @@ module.exports = {
 
         titleGrad1: "#FFAF5F",
         titleGrad2: "#F5D37D",
+
+        flowBg2: "#FFFAF6",
+        flowBg3: "#FFF6EF",
+        flowBg4: "#FFF3E7",
+        flowBg5: "#FFEFE1",
       },
 
       fontSize: {

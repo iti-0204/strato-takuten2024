@@ -1,8 +1,27 @@
 import React from "react";
 
-const Flow = () => {
+const bgColors = {
+  "01": "bg-white",
+  "02": "bg-flowBg2",
+  "03": "bg-flowBg3",
+  "04": "bg-flowBg4",
+  "05": "bg-flowBg5",
+};
+
+const Flow = ({ num, title, caption, img }) => {
+  console.log(bgColors[num]);
+
+  const caption2 = caption.split("<br/>").map((item, index) => {
+    return (
+      <React.Fragment key={index}>
+        {item}
+        <br />
+      </React.Fragment>
+    );
+  });
+
   return (
-    <div className="flex justify-between p-6">
+    <div className={"flex justify-between p-6 " + bgColors[num]}>
       <div>
         <div>
           <p className="text-transparent text-base font-en tracking-en bg-gradient-to-b inline-block bg-clip-text relative step-gradation1">
@@ -11,23 +30,15 @@ const Flow = () => {
         </div>
         <div>
           <p className="text-transparent text-3.5xl font-en tracking-en bg-gradient-to-b inline-block bg-clip-text relative step-gradation2">
-            01
+            {num}
           </p>
         </div>
         <h3 className="text-black font-jp tracking-jp font-black text-2xl mb-4">
-          ブレインストーミング
+          {title}
         </h3>
-        <p className="text-black font-jp tracking-jp font-normal">
-          数名のチームで１つのテーマに対し、お互いに意見を出し合い
-          <br />
-          たくさんのアイデアを生産し、問題解決に結びつける方法
-        </p>
+        <p className="text-black font-jp tracking-jp font-normal">{caption2}</p>
       </div>
-      <img
-        src="/images/background.png"
-        alt=""
-        className="w-flowImg object-cover"
-      />
+      <img src={img} alt="" className="w-flowImg object-cover" />
     </div>
   );
 };
