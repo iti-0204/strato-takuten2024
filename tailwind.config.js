@@ -24,6 +24,7 @@ module.exports = {
         black: "#000000",
         gray: "#9D9791",
         white: "#FFFFFF",
+
         titleGrad1: "#FFAF5F",
         titleGrad2: "#F5D37D",
       },
