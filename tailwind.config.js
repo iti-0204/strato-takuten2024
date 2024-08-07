@@ -38,6 +38,7 @@ module.exports = {
       width: {
         38: "154px",
         card: "476px",
+        flowImg: "280px",
       },
 
       height: {

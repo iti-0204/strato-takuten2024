@@ -13,7 +13,7 @@ function App() {
       </div> */}
       {/* <Header /> */}
       <Button type={"UI"} />
-      <h1 className="font-en tracking-en">faoiwe</h1>
+
       {/* <Title type={"center"}/> */}
       {/* <Card
         team={"4Mチーム"}
