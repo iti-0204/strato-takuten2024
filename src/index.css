@@ -18,11 +18,19 @@ code {
     monospace;
 }
 
-.step-gradation {
+.step-gradation1 {
   background-image: linear-gradient(
     108deg,
     rgba(198, 241, 198, 1),
     rgba(239, 195, 151, 1) 100%,
     rgba(223, 226, 184, 1) 50%
+  );
+}
+
+.step-gradation2 {
+  background-image: linear-gradient(
+    95deg,
+    rgba(223, 220, 247, 1),
+    rgba(245, 206, 66, 1)
   );
 }
