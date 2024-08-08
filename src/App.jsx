@@ -5,12 +5,29 @@ import Flow from "./components/ui/Flow";
 // import Title from "./components/Title";
 // import Header from "./components/Header";
 import Fv from "./components/layouts/Fv";
-import Animation from "./Animation.json";
+import About from "./components/layouts/About";
+
+import PcAnimation from "./PcAnimation.json";
+import SpAnimation from "./SpAnimation.json";
+import TabletAnimation from "./TabletAnimation.json";
 
 import { Player } from "@lottiefiles/react-lottie-player";
 // import Lottie from "lottie-react";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
+  // メディアクエリ
+  const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
+  const isPC = useMediaQuery({ query: "(min-width: 1024px)" });
+
+  // Lottie振り分け
+  let lottieSrc = SpAnimation;
+  if (isPC) {
+    lottieSrc = PcAnimation;
+  } else if (isTablet) {
+    lottieSrc = TabletAnimation;
+  }
+
   // LottieComplete時の処理
   const doSomething = () => {
     var firstView = document.getElementById("first-view");
@@ -23,21 +40,26 @@ function App() {
         <Player
           autoplay
           loop={false}
-          src={Animation}
+          src={lottieSrc}
           onEvent={(event) => {
             console.log(event);
             if (event === "complete") {
               doSomething();
+              console.log(lottieSrc);
             }
           }}
           id="first-view"
-          className="h-screen"
+          className="h-screen scale-[1.3]"
         />
         {/* <Lottie options={options} height={400} width={400} />; */}
         <Fv />
       </div>
 
       {/* <Header /> */}
+
+      <section id="about">
+        <About />
+      </section>
 
       {/* <Title type={"center"}/> */}
       {/* <Card
