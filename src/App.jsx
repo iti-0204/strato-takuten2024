@@ -1,6 +1,6 @@
 import "./App.css";
-import Button from "./components/Button";
-import Flow from "./components/Flow";
+import Button from "./components/ui/Button";
+import Flow from "./components/ui/Flow";
 // import Card from "./components/Card";
 // import Title from "./components/Title";
 // import Header from "./components/Header";
