@@ -4,14 +4,48 @@ import Flow from "./components/Flow";
 // import Card from "./components/Card";
 // import Title from "./components/Title";
 // import Header from "./components/Header";
+import Animation from "./Animation.json";
+import TryAnimation from "./tryAnimation.json";
 
 import { BiChevronDown } from "react-icons/bi";
+import { Player } from "@lottiefiles/react-lottie-player";
+import Lottie from "lottie-react";
+
+const destroyLT = () => {
+  const firstView = document.getElementById("first-view");
+};
 
 function App() {
+  // const options = {
+  //   loop: false,
+  //   autoplay: true,
+  //   animationData: Animation,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+  const doSomething = () => {
+    var firstView = document.getElementById("first-view");
+    firstView.classList.add("delete");
+  };
+
   return (
     <div>
-      <div id="mainvisual">
-        <div className="bg-fv w-full h-screen bg-cover text-center pt-[20%]">
+      <div id="mainvisual relative">
+        <Player
+          autoplay
+          loop={false}
+          src={Animation}
+          onEvent={(event) => {
+            console.log(event);
+            if (event === "complete") {
+              doSomething();
+            }
+          }}
+          id="first-view"
+        />
+        {/* <Lottie options={options} height={400} width={400} />; */}
+        <div className="bg-fv w-full h-screen bg-cover text-center pt-[20%] z-10">
           <img
             src="/images/logo.png"
             alt="Stratoロゴ"

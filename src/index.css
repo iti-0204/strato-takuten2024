@@ -34,3 +34,7 @@ code {
     rgba(245, 206, 66, 1)
   );
 }
+
+.delete {
+  display: none;
+}
