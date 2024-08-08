@@ -35,6 +35,10 @@ code {
   );
 }
 
+.zoom {
+  zoom: 1.5;
+}
+
 .delete {
   display: none;
 }

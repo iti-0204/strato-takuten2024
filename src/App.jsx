@@ -4,16 +4,11 @@ import Flow from "./components/Flow";
 // import Card from "./components/Card";
 // import Title from "./components/Title";
 // import Header from "./components/Header";
-import Animation2 from "./Animation2.json";
-import TryAnimation from "./tryAnimation.json";
+import Animation from "./Animation.json";
 
 import { BiChevronDown } from "react-icons/bi";
 import { Player } from "@lottiefiles/react-lottie-player";
-import Lottie from "lottie-react";
-
-const destroyLT = () => {
-  const firstView = document.getElementById("first-view");
-};
+// import Lottie from "lottie-react";
 
 function App() {
   const doSomething = () => {
@@ -27,7 +22,7 @@ function App() {
         <Player
           autoplay
           loop={false}
-          src={Animation2}
+          src={Animation}
           onEvent={(event) => {
             console.log(event);
             if (event === "complete") {
