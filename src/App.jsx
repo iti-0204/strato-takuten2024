@@ -14,6 +14,7 @@ import TabletAnimation from "./TabletAnimation.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 // import Lottie from "lottie-react";
 import { useMediaQuery } from "react-responsive";
+import Works from "./components/layouts/Works";
 
 function App() {
   // メディアクエリ
@@ -58,6 +59,10 @@ function App() {
 
       <section id="about">
         <About />
+      </section>
+
+      <section id="works">
+        <Works />
       </section>
 
       {/* <Title type={"center"}/> */}
