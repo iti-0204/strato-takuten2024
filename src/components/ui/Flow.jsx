@@ -1,16 +1,14 @@
 import React from "react";
 
 const bgColors = {
-  "01": "bg-white",
+  "01": "bg-white rounded-t-2xl",
   "02": "bg-flowBg2",
   "03": "bg-flowBg3",
   "04": "bg-flowBg4",
-  "05": "bg-flowBg5",
+  "05": "bg-flowBg5 rounded-b-2xl",
 };
 
 const Flow = ({ num, title, caption, img }) => {
-  console.log(bgColors[num]);
-
   const caption2 = caption.split("<br/>").map((item, index) => {
     return (
       <React.Fragment key={index}>
@@ -22,7 +20,7 @@ const Flow = ({ num, title, caption, img }) => {
 
   return (
     <div className={"flex justify-between p-6 " + bgColors[num]}>
-      <div>
+      <div className="text-left">
         <div>
           <p className="text-transparent text-base font-en tracking-en bg-gradient-to-b inline-block bg-clip-text relative step-gradation1">
             Step
