@@ -3,7 +3,7 @@ import "./App.css";
 import Flow from "./components/ui/Flow";
 // import Card from "./components/Card";
 // import Title from "./components/Title";
-// import Header from "./components/Header";
+import Header from "./components/layouts/Header";
 import Fv from "./components/layouts/Fv";
 import About from "./components/layouts/About";
 
@@ -55,8 +55,7 @@ function App() {
         <Fv />
       </div>
 
-      {/* <Header /> */}
-
+      <Header />
       <section id="about">
         <About />
       </section>
