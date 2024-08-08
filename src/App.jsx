@@ -4,7 +4,7 @@ import Flow from "./components/Flow";
 // import Card from "./components/Card";
 // import Title from "./components/Title";
 // import Header from "./components/Header";
-import Animation from "./Animation.json";
+import Animation2 from "./Animation2.json";
 import TryAnimation from "./tryAnimation.json";
 
 import { BiChevronDown } from "react-icons/bi";
@@ -16,14 +16,6 @@ const destroyLT = () => {
 };
 
 function App() {
-  // const options = {
-  //   loop: false,
-  //   autoplay: true,
-  //   animationData: Animation,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
   const doSomething = () => {
     var firstView = document.getElementById("first-view");
     firstView.classList.add("delete");
@@ -35,7 +27,7 @@ function App() {
         <Player
           autoplay
           loop={false}
-          src={Animation}
+          src={Animation2}
           onEvent={(event) => {
             console.log(event);
             if (event === "complete") {
@@ -43,6 +35,7 @@ function App() {
             }
           }}
           id="first-view"
+          className="h-screen"
         />
         {/* <Lottie options={options} height={400} width={400} />; */}
         <div className="bg-fv w-full h-screen bg-cover text-center pt-[20%] z-10">
