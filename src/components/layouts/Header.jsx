@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header
       id="header"
-      className="flex justify-between items-center px-14 py-[34px]"
+      className="flex justify-between items-center px-14 py-[34px] sticky top-0 bg-white"
     >
       <h1>
         <a href="#top">

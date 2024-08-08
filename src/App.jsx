@@ -54,8 +54,8 @@ function App() {
         {/* <Lottie options={options} height={400} width={400} />; */}
         <Fv />
       </div>
-
       <Header />
+
       <section id="about">
         <About />
       </section>
