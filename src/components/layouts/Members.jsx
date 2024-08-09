@@ -10,8 +10,8 @@ import "@splidejs/react-splide/css/core";
 
 const Members = () => {
   return (
-    <div className="text-center">
-      <Title type={"center"}/>
+    <div className="text-center max-w-[1000px] mx-auto">
+      <Title type={"center"} />
       <Splide
         hasTrack={false}
         aria-label="members"
@@ -21,25 +21,79 @@ const Members = () => {
           type: "loop",
           pagination: false,
         }}
+        className="w-full"
       >
         <SplideTrack>
           <SplideSlide>
-            <div className="flex justify-between">
+            <div className="flex justify-center gap-[36px] items-center font-jp tracking-jp font-bold">
               <div className="text-center">
-                <img src="/images/tyotohaya.png" alt="" />
-                <p>ちょっと早朝やなのに。</p>
+                <img
+                  src="/images/tyotohaya.png"
+                  alt=""
+                  className="w-[240px] h-[240px]"
+                />
+                <p className="my-4">ちょっと早朝やなのに。</p>
                 <Button type={"btnM"} />
               </div>
-              <img src="/images/tyotohaya.png" alt="" />
-              <img src="/images/tyotohaya.png" alt="" />
-              <img src="/images/tyotohaya.png" alt="" />
+              <div>
+                <img src="/images/tyotohaya.png" alt="" className="h-40 w-40" />
+                <p className="mt-3">2M log</p>
+              </div>
+              <div>
+                <img src="/images/tyotohaya.png" alt="" className="h-40 w-40" />
+                <p className="mt-3">2M log</p>
+              </div>
+              <div>
+                <img src="/images/tyotohaya.png" alt="" className="h-40 w-40" />
+                <p className="mt-3">2M log</p>
+              </div>
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="bg-buttonGrad w-full h-60"></div>
+            <div className="flex justify-center gap-[36px] items-center font-jp tracking-jp font-bold">
+              <div className="text-center">
+                <img
+                  src="/images/nemu.png"
+                  alt=""
+                  className="w-[240px] h-[240px]"
+                />
+                <p className="my-4">ちょっと早朝やなのに。</p>
+                <Button type={"btnM"} />
+              </div>
+              <div>
+                <img src="/images/nemu.png" alt="" className="h-40 w-40" />
+                <p className="mt-3">2M log</p>
+              </div>
+              <div>
+                <img src="/images/nemu.png" alt="" className="h-40 w-40" />
+                <p className="mt-3">2M log</p>
+              </div>
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="bg-primary w-full h-60"></div>
+            <div className="flex justify-center gap-[36px] items-center font-jp tracking-jp font-bold">
+              <div className="text-center">
+                <img
+                  src="/images/tyotohaya.png"
+                  alt=""
+                  className="w-[240px] h-[240px]"
+                />
+                <p className="my-4">ちょっと早朝やなのに。</p>
+                <Button type={"btnM"} />
+              </div>
+              <div>
+                <img src="/images/tyotohaya.png" alt="" className="h-40 w-40" />
+                <p className="mt-3">2M log</p>
+              </div>
+              <div>
+                <img src="/images/tyotohaya.png" alt="" className="h-40 w-40" />
+                <p className="mt-3">2M log</p>
+              </div>
+              <div>
+                <img src="/images/tyotohaya.png" alt="" className="h-40 w-40" />
+                <p className="mt-3">2M log</p>
+              </div>
+            </div>
           </SplideSlide>
         </SplideTrack>
         {/* ↓↓arrowSetting */}
