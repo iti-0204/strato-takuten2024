@@ -1,20 +1,24 @@
 import React from "react";
+import { BiChevronUp } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className="mx-auto flex justify-between h-[35vh] items-center max-w-[1000px]">
+    <div className="mx-auto flex justify-between h-[35vh] items-center max-w-[1000px] font-en tracking-en font-normal">
       <div></div>
-      <div>
-        <div className="flex">
+      <div className="text-center">
+        <div className="flex gap-6 mb-6">
           <img src="/images/logo.png" alt="" />
-          <p>
+          <p className="text-left">
             UI/UX <br />
             Service Design
           </p>
         </div>
-        <p>© Strato All Rights Reserved.</p>
+        <p className="text-[10px]">© Strato All Rights Reserved.</p>
       </div>
-      <p>TOP</p>
+      <div className="text-primary">
+        <BiChevronUp color={"#FC840D"} className="mx-auto" size={24}/>
+        <p className="mt-[9px] font-bold">TOP</p>
+      </div>
     </div>
   );
 };
