@@ -7,13 +7,11 @@ import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/skyblue";
 import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
-import { type } from "@testing-library/user-event/dist/type";
-
-import { BiChevronRight } from "react-icons/bi";
 
 const Members = () => {
   return (
-    <div className="max-w-[]">
+    <div className="text-center">
+      <Title type={"center"}/>
       <Splide
         hasTrack={false}
         aria-label="members"
@@ -26,7 +24,7 @@ const Members = () => {
       >
         <SplideTrack>
           <SplideSlide>
-            <div className="flex">
+            <div className="flex justify-between">
               <div className="text-center">
                 <img src="/images/tyotohaya.png" alt="" />
                 <p>ちょっと早朝やなのに。</p>
@@ -44,12 +42,11 @@ const Members = () => {
             <div className="bg-primary w-full h-60"></div>
           </SplideSlide>
         </SplideTrack>
-
+        {/* ↓↓arrowSetting */}
         <div className="splide__arrows">
           <button className="splide__arrow splide__arrow--prev">
             <img src="/images/arrowBack.png" alt="次へボタン" />
           </button>
-
           <button className="splide__arrow splide__arrow--next">
             <img src="/images/arrowNext.png" alt="次へボタン" />
           </button>
