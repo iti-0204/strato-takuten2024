@@ -12,6 +12,7 @@ import TabletAnimation from "./TabletAnimation.json";
 
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useMediaQuery } from "react-responsive";
+import Footer from "./components/layouts/Footer";
 
 function App() {
   // メディアクエリ
@@ -69,6 +70,10 @@ function App() {
       <section id="members">
         <Members />
       </section>
+
+      <footer className="bg-[#FFF1E4]">
+        <Footer />
+      </footer>
     </div>
   );
 }
