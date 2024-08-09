@@ -10,7 +10,7 @@ import "@splidejs/react-splide/css/core";
 
 const Members = () => {
   return (
-    <div className="text-center max-w-[1000px] mx-auto">
+    <div className="text-center max-w-[1000px] mx-auto pt-16 pb-[163px]">
       <Title type={"center"} />
       <Splide
         hasTrack={false}
