@@ -4,6 +4,7 @@ import Fv from "./components/layouts/Fv";
 import About from "./components/layouts/About";
 import Works from "./components/layouts/Works";
 import Flow from "./components/layouts/Flow";
+import Members from "./components/layouts/Members";
 
 import PcAnimation from "./PcAnimation.json";
 import SpAnimation from "./SpAnimation.json";
@@ -63,6 +64,10 @@ function App() {
 
       <section id="flow" className="bg-fv w-full bg-cover">
         <Flow />
+      </section>
+
+      <section id="members">
+        <Members />
       </section>
     </div>
   );
