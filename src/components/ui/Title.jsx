@@ -15,7 +15,7 @@ const Title = ({ type }) => {
   return (
     <h2
       className={
-        "text-transparent text-10xl font-en tracking-en bg-gradient-to-b from-titleGrad1 via-titleGrad2/30 to-white inline-block bg-clip-text relative" +
+        "text-transparent text-10xl font-bold font-en tracking-en bg-gradient-to-b from-titleGrad1 via-titleGrad2/30 to-white inline-block bg-clip-text relative" +
         titleAdd
       }
     >

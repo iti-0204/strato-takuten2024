@@ -22,12 +22,12 @@ const Flow = ({ num, title, caption, img }) => {
     <div className={"flex justify-between p-6 " + bgColors[num]}>
       <div className="text-left">
         <div>
-          <p className="text-transparent text-base font-en tracking-en bg-gradient-to-b inline-block bg-clip-text relative step-gradation1">
+          <p className="text-transparent text-base font-semibold font-en tracking-en bg-gradient-to-b inline-block bg-clip-text relative step-gradation1">
             Step
           </p>
         </div>
         <div>
-          <p className="text-transparent text-3.5xl font-en tracking-en bg-gradient-to-b inline-block bg-clip-text relative step-gradation2">
+          <p className="text-transparent text-3.5xl font-semibold font-en tracking-en bg-gradient-to-b inline-block bg-clip-text relative step-gradation2">
             {num}
           </p>
         </div>

@@ -12,7 +12,7 @@ const Header = () => {
         </a>
       </h1>
       <nav id="nav">
-        <ul className="flex justify-between items-center gap-14 font-en tracking-en text-xl text-primary">
+        <ul className="flex justify-between items-center gap-14 font-bold font-en tracking-en text-xl text-primary">
           <li>
             <a href="#works">Works</a>
           </li>
