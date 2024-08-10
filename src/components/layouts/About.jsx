@@ -7,7 +7,7 @@ const About = () => {
   const isPC = useMediaQuery({ query: "(min-width: 1000px)" });
 
   return (
-    <div className="bg-fv w-full tablet:h-[90vh] h-[50vh] bg-cover text-center font-jp tracking-jp text-black pc:relative">
+    <div className="bg-fv w-full tablet:h-[90vh] h-[70vh] bg-cover text-center font-jp tracking-jp text-black pc:relative">
       <div className="h-full flex flex-col justify-center">
         {isPC && <Title type={"center"} />}
         {isSpTablet && <Title type={"sp"} />}
