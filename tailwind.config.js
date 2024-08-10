@@ -16,6 +16,13 @@ module.exports = {
       en: ".1em",
       jp: ".04em",
     },
+
+    // メディアクエリ
+    screens: {
+      pc: "1000px",
+      tablet: "521px",
+    },
+
     extend: {
       // カラー設定
       colors: {

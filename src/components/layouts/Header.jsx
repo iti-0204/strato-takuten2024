@@ -4,11 +4,15 @@ const Header = () => {
   return (
     <header
       id="header"
-      className="flex justify-between items-center px-14 py-[34px] sticky top-0 bg-white z-10"
+      className="pc:flex hidden justify-between items-center px-14 py-[34px] sticky top-0 bg-white z-10"
     >
       <h1>
         <a href="#top">
-          <img src="/images/logo.png" alt="stratoロゴ" className="w-[10vw] h-full" />
+          <img
+            src="/images/logo.png"
+            alt="stratoロゴ"
+            className="w-[10vw] h-full"
+          />
         </a>
       </h1>
       <nav id="nav">

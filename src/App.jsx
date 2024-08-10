@@ -53,6 +53,7 @@ function App() {
 
         <Fv />
       </div>
+
       <Header />
 
       <section id="about">
