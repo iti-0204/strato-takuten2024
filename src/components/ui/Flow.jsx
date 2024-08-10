@@ -1,8 +1,8 @@
 import React from "react";
 
 const bgColors = {
-  "01": "bg-white rounded-t-2xl",
-  "02": "bg-flowBg2",
+  "01": "bg-white pc:rounded-t-2xl tablet:rounded-tl-2xl tablet:rounded-tr-none rounded-t-2xl",
+  "02": "bg-flowBg2 pc:rounded-none tablet:rounded-tr-2xl rounded-none",
   "03": "bg-flowBg3",
   "04": "bg-flowBg4",
   "05": "bg-flowBg5 rounded-b-2xl",
@@ -19,7 +19,12 @@ const Flow = ({ num, title, caption, img }) => {
   });
 
   return (
-    <div className={"flex justify-between p-6 " + bgColors[num]}>
+    <div
+      className={
+        "pc:flex justify-between p-6 pc:w-full tablet:w-[350px] " +
+        bgColors[num]
+      }
+    >
       <div className="text-left">
         <div>
           <p className="text-transparent text-base font-semibold font-en tracking-en bg-gradient-to-b inline-block bg-clip-text relative step-gradation1">

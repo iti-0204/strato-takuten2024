@@ -4,14 +4,14 @@ import Card from "../ui/Card";
 
 const Works = () => {
   return (
-    <div className="max-w-[1000px] mx-auto tablet:pt-20 pt-6 tablet:pb-[88px] pb-[38px] text-center tablet:text-left">
+    <div className="max-w-[1000px] mx-auto tablet:pt-20 pt-6 tablet:pb-[88px] pb-[38px] text-center pc:text-left">
       <Title type={"left"} />
       <div className="max-w-[270px] mx-auto tablet:max-w-full tablet:mx-0">
         <p className="font-jp tracking-jp text-black tablet:mt-4 my-[49px] tablet:mb-[36px]">
           最終的な成果物はアプリケーションデザイン/webデザインとなります。
         </p>
       </div>
-      <div className="flex tablet:flex-wrap tablet:gap-12 flex-col items-center gap-[36px]">
+      <div className="flex tablet:flex-wrap tablet:gap-12 pc:flex-row flex-col items-center gap-[36px]">
         <Card
           team={"4Mチーム"}
           title={"サービスタイトル"}
