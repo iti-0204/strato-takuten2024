@@ -7,16 +7,16 @@ const About = () => {
   const isPC = useMediaQuery({ query: "(min-width: 1000px)" });
 
   return (
-    <div className="bg-fv w-full h-[90vh] bg-cover text-center font-jp tracking-jp text-black pc:relative">
+    <div className="bg-fv w-full tablet:h-[90vh] h-[50vh] bg-cover text-center font-jp tracking-jp text-black pc:relative">
       <div className="h-full flex flex-col justify-center">
         {isPC && <Title type={"center"} />}
         {isSpTablet && <Title type={"sp"} />}
 
-        <div className="mt-20 max-w-[270px] mx-auto tablet:max-w-full tablet:mx-0">
+        <div className="tablet:mt-20 mt-16 max-w-[270px] mx-auto tablet:max-w-full tablet:mx-0">
           <p className="font-bold tablet:text-[32px] text-xl  mb-6">
             プロセスを層にしてサービスを作る卓
           </p>
-          <p className="mb-[140px]">
+          <p className="tablet:mb-[140px]">
             様々な段階を踏まえながら、みんなのアイデアを出し合い
             <br />
             UI/UXデザインプロセスを楽しみながらサービスを考える卓です。

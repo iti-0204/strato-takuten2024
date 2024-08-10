@@ -4,7 +4,7 @@ import Card from "../ui/Card";
 
 const Works = () => {
   return (
-    <div className="max-w-[1000px] mx-auto pt-20 pb-[88px]">
+    <div className="max-w-[1000px] mx-auto pt-20 pb-[88px] text-center tablet:text-left">
       <Title type={"left"} />
       <p className="font-jp tracking-jp text-black mt-4 mb-[36px]">
         最終的な成果物はアプリケーションデザイン/webデザインとなります。
