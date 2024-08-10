@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ team, title, caption }) => {
   return (
-    <div className="w-card h-card p-6 shadow-card rounded-2xl">
+    <div className="tablet:w-card tablet:h-card w-[335px] h-auto p-6 shadow-card rounded-2xl text-left">
       <img
         src="/images/background.png"
         alt=""
