@@ -5,7 +5,7 @@ const Title = ({ type }) => {
   let subtitleAdd = "";
   switch (type) {
     case "center":
-      subtitleAdd = " left-1/2 translate-x-title";
+      // subtitleAdd = " left-1/2 translate-x-title";
       break;
     case "sp":
       break;
@@ -15,7 +15,7 @@ const Title = ({ type }) => {
   return (
     <h2
       className={
-        "text-transparent text-10xl font-bold font-en tracking-en bg-gradient-to-b from-titleGrad1 via-titleGrad2/30 to-white inline-block bg-clip-text relative" +
+        "text-transparent text-[60px] tablet:text-10xl font-bold font-en tracking-en bg-gradient-to-b from-titleGrad1 via-titleGrad2/30 to-white inline-block bg-clip-text relative" +
         titleAdd
       }
     >
@@ -25,7 +25,7 @@ const Title = ({ type }) => {
     </p> */}
       <p
         className={
-          "absolute text-xl font-jp tracking-jp text-primary top-title left-0" +
+          "absolute left-0 right-0 bottom-0 m-auto text-xl font-jp tracking-jp text-primary top-title" +
           subtitleAdd
         }
       >
