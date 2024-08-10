@@ -4,7 +4,7 @@ import Card from "../ui/Card";
 
 const Works = () => {
   return (
-    <div className="max-w-[1000px] mx-auto pt-20 pb-[88px] text-center tablet:text-left">
+    <div className="max-w-[1000px] mx-auto tablet:pt-20 pt-6 tablet:pb-[88px] pb-[38px] text-center tablet:text-left">
       <Title type={"left"} />
       <div className="max-w-[270px] mx-auto tablet:max-w-full tablet:mx-0">
         <p className="font-jp tracking-jp text-black tablet:mt-4 my-[49px] tablet:mb-[36px]">
