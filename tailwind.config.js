@@ -63,7 +63,8 @@ module.exports = {
       backgroundImage: {
         // fv: "url('images/background.png')",
         fv: "url('../public/images/background.png')",
-        "footer-texture": "url('/img/footer-texture.png')",
+
+        about: "url('../public/images/background.png')",
       },
 
       boxShadow: {
