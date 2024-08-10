@@ -19,8 +19,13 @@ const About = () => {
       </div>
       <img
         src="/images/perusona.png"
-        alt=""
-        className="absolute top-[-50%] right-0 bottom-0 m-auto left-[-75%] max-w-40 h-auto w-[12%] rounded-2xl shadow-card aspect-[160/144]"
+        alt="ペルソナ画像"
+        className="absolute top-[-35%] right-0 bottom-0 m-auto left-[-75%] max-w-40 h-auto w-[12%] rounded-2xl shadow-card aspect-[160/144]"
+      />
+      <img
+        src="/images/buresuto.png"
+        alt="ブレスト画像"
+        className="absolute top-[-10%] right-0 bottom-0 m-auto left-[-65%] max-w-24 h-auto w-[12%] rounded-2xl shadow-card aspect-[1/1]"
       />
     </div>
   );
