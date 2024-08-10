@@ -11,16 +11,19 @@ const About = () => {
       <div className="h-full flex flex-col justify-center">
         {isPC && <Title type={"center"} />}
         {isSpTablet && <Title type={"sp"} />}
-        <p className="font-bold text-[32px] mt-20 mb-6">
-          プロセスを層にしてサービスを作る卓
-        </p>
-        <p className="mb-[140px]">
-          様々な段階を踏まえながら、みんなのアイデアを出し合い
-          <br />
-          UI/UXデザインプロセスを楽しみながらサービスを考える卓です。
-          <br />
-          最終的な成果物はアプリケーションデザイン/webデザインとなります。
-        </p>
+
+        <div className="mt-20 max-w-[270px] mx-auto tablet:max-w-full tablet:mx-0">
+          <p className="font-bold tablet:text-[32px] text-xl  mb-6">
+            プロセスを層にしてサービスを作る卓
+          </p>
+          <p className="mb-[140px]">
+            様々な段階を踏まえながら、みんなのアイデアを出し合い
+            <br />
+            UI/UXデザインプロセスを楽しみながらサービスを考える卓です。
+            <br />
+            最終的な成果物はアプリケーションデザイン/webデザインとなります。
+          </p>
+        </div>
       </div>
       <img
         src="/images/perusona.png"
