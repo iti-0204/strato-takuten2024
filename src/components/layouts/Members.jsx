@@ -10,8 +10,10 @@ import "@splidejs/react-splide/css/core";
 
 const Members = () => {
   return (
-    <div className="text-center max-w-[1000px] mx-auto pt-16 pb-[163px]">
+    <div className="text-center max-w-[1000px] mx-auto tablet:pt-16 tablet:pb-[163px] pt-[42px] pb-16">
       <Title type={"center"} />
+
+      {/* tablet */}
       <Splide
         hasTrack={false}
         aria-label="members"
@@ -21,7 +23,7 @@ const Members = () => {
           type: "loop",
           pagination: false,
         }}
-        className="w-full"
+        className="w-full hidden tablet:block"
       >
         <SplideTrack>
           <SplideSlide>
@@ -106,6 +108,46 @@ const Members = () => {
           </button>
         </div>
       </Splide>
+
+      {/* sp */}
+      <div className="tablet:hidden">
+        <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
+          <img
+            src="/images/tyotohaya.png"
+            alt=""
+            className="w-[240px] h-[240px] mx-auto "
+          />
+          <p className="my-4">ちょっと早朝やなのに。</p>
+          <Button type={"btnM"} />
+        </div>
+        <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
+          <img
+            src="/images/tyotohaya.png"
+            alt=""
+            className="w-[240px] h-[240px] mx-auto "
+          />
+          <p className="my-4">ちょっと早朝やなのに。</p>
+          <Button type={"btnM"} />
+        </div>
+        <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
+          <img
+            src="/images/tyotohaya.png"
+            alt=""
+            className="w-[240px] h-[240px] mx-auto "
+          />
+          <p className="my-4">ちょっと早朝やなのに。</p>
+          <Button type={"btnM"} />
+        </div>
+        <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
+          <img
+            src="/images/tyotohaya.png"
+            alt=""
+            className="w-[240px] h-[240px] mx-auto "
+          />
+          <p className="my-4">ちょっと早朝やなのに。</p>
+          <Button type={"btnM"} />
+        </div>
+      </div>
     </div>
   );
 };
