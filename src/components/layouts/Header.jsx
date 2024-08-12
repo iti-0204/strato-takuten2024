@@ -21,10 +21,10 @@ const Header = () => {
             <a href="#works">Works</a>
           </li>
           <li>
-            <a href="flow">Flow</a>
+            <a href="#flow">Flow</a>
           </li>
           <li>
-            <a href="member">Members</a>
+            <a href="#members">Members</a>
           </li>
           <li>
             <a

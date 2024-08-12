@@ -30,12 +30,15 @@ function App() {
   // LottieComplete時の処理
   const doSomething = () => {
     var firstView = document.getElementById("first-view");
+    var fadeIn = document.getElementById("mainvisual");
     firstView.classList.add("delete");
+    console.log(fadeIn);
+    fadeIn.classList.add("fadeIn");
   };
 
   return (
     <div>
-      <div id="mainvisual relative">
+      <div id="mainvisual">
         <Player
           autoplay
           loop={false}
