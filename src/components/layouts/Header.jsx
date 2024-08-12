@@ -1,4 +1,5 @@
 import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -29,8 +30,9 @@ const Header = () => {
           <li>
             <a
               href="https://geikou-takuten.com/"
-              className="text-jp tracking-jp font-bold"
+              className="text-jp tracking-jp font-bold flex items-center gap-2"
             >
+              <FaExternalLinkAlt />
               卓展サイトへ
             </a>
           </li>

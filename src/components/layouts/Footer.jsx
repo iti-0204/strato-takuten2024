@@ -18,8 +18,10 @@ const Footer = () => {
         </p>
       </div>
       <div className="text-primary tablet:block hidden">
-        <BiChevronUp color={"#FC840D"} className="mx-auto" size={24} />
-        <p className="mt-[9px] font-bold">TOP</p>
+        <a href="#top">
+          <BiChevronUp color={"#FC840D"} className="mx-auto" size={24} />
+          <p className="mt-[9px] font-bold">TOP</p>
+        </a>
       </div>
     </div>
   );
