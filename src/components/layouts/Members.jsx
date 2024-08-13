@@ -174,7 +174,7 @@ const Members = () => {
       <div className="tablet:hidden">
         <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
           <img
-            src="/images/tyotohaya.png"
+            src="/images/members/tyotohaya.png"
             alt=""
             className="w-[240px] h-[240px] mx-auto "
           />
@@ -183,7 +183,7 @@ const Members = () => {
         </div>
         <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
           <img
-            src="/images/tyotohaya.png"
+            src="/images/members/nemu.png"
             alt=""
             className="w-[240px] h-[240px] mx-auto "
           />
@@ -192,7 +192,7 @@ const Members = () => {
         </div>
         <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
           <img
-            src="/images/tyotohaya.png"
+            src="/images/members/risingsun.png"
             alt=""
             className="w-[240px] h-[240px] mx-auto "
           />
@@ -201,7 +201,7 @@ const Members = () => {
         </div>
         <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
           <img
-            src="/images/tyotohaya.png"
+            src="/images/members/korikorijonjon.png"
             alt=""
             className="w-[240px] h-[240px] mx-auto "
           />
