@@ -11,7 +11,7 @@ import "@splidejs/react-splide/css/core";
 const Members = () => {
   return (
     <div className="text-center max-w-[1000px] mx-auto tablet:pt-16 tablet:pb-[163px] pt-[42px] pb-16">
-      <Title type={"center"} />
+      <Title type={"center"} title={"Members"} subtitle={"メンバー一覧"} />
 
       {/* tablet */}
       <Splide

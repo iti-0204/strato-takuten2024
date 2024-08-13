@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="bg-fv w-full tablet:h-[90vh] h-[70vh] bg-cover text-center font-jp tracking-jp text-black pc:relative">
       <div className="h-full flex flex-col justify-center">
-        <Title type={"center"} />
+        <Title type={"center"} title={"About"} subtitle={"Stratoについて"}/>
         <div className="tablet:mt-20 mt-16 max-w-[270px] mx-auto tablet:max-w-full tablet:mx-0">
           <p className="font-bold tablet:text-[32px] text-xl  mb-6">
             プロセスを層にしてサービスを作る卓

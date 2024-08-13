@@ -5,7 +5,7 @@ import Card from "../ui/Card";
 const Works = () => {
   return (
     <div className="max-w-[1000px] mx-auto tablet:pt-20 pt-6 tablet:pb-[88px] pb-[38px] text-center pc:text-left">
-      <Title type={"left"} />
+      <Title type={"left"} title={"Works"} subtitle={"制作作品一覧"} />
       <div className="max-w-[270px] mx-auto tablet:max-w-full tablet:mx-0">
         <p className="font-jp tracking-jp text-black tablet:mt-4 my-[49px] tablet:mb-[36px]">
           最終的な成果物はアプリケーションデザイン/webデザインとなります。

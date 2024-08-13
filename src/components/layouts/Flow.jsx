@@ -5,7 +5,7 @@ import FlowUI from "../ui/Flow";
 const Flow = () => {
   return (
     <div className="pc:max-w-[1000px] mx-auto pt-[88px] pb-[59px] text-center">
-      <Title type={"center"} />
+      <Title type={"center"} title={"Flow"} subtitle={"制作フロー"} />
       <p className="font-jp tracking-jp mt-[36px] mb-[68px] max-w-[270px] mx-auto tablet:max-w-[700px] pc:max-w-full pc:mx-0">
         ユーザーのニーズを理解し、効果的なデザインを生み出すために以下のプロセスを実行しました。
         <br />

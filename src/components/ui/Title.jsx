@@ -1,6 +1,6 @@
 import React from "react";
 
-const Title = ({ type }) => {
+const Title = ({ type, title ,subtitle}) => {
   let titleAdd = "";
   let subtitleAdd = "";
   switch (type) {
@@ -19,7 +19,7 @@ const Title = ({ type }) => {
         titleAdd
       }
     >
-      Flow
+      {title}
       {/* <p className="absolute text-xl font-jp tracking-jp text-primary top-title left-1/2 translate-x-title">
       制作フロー
     </p> */}
@@ -29,7 +29,7 @@ const Title = ({ type }) => {
           subtitleAdd
         }
       >
-        制作フロー
+        {subtitle}
       </p>
     </h2>
   );
