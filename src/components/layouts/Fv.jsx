@@ -6,7 +6,11 @@ import { BiChevronDown } from "react-icons/bi";
 const Fv = () => {
   return (
     <div className="bg-fv w-full h-screen bg-cover text-center tablet:pt-[40vh] z-10 tablet:block flex flex-col justify-center items-center">
-      <img src="/images/logo.png" alt="Stratoロゴ" className="mx-auto mb-6" />
+      <img
+        src="/images/logo.png"
+        alt="Stratoロゴ"
+        className="mx-auto mb-6 w-[230px]"
+      />
       <p className="font-en tracking-en text-base text-primary mb-9 font-bold">
         UI/UX <br />
         Service Design

@@ -7,7 +7,7 @@ const Footer = () => {
       <div></div>
       <div className="text-center">
         <div className=" tablet:flex gap-6 mb-6">
-          <img src="/images/logo.png" alt="" className="mb-6 tablet:mb-0" />
+          <img src="/images/logo.png" alt="" className="mb-6 tablet:mb-0 w-[230px]" />
           <p className="text-left">
             UI/UX <br />
             Service Design

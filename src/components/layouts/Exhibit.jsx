@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "./Header";
 
 const Exhibit = () => {
-  return <div>Exhibit</div>;
+  return (
+    <div>
+      <Header></Header>
+    </div>
+  );
 };
 
 export default Exhibit;
