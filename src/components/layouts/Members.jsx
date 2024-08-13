@@ -23,7 +23,7 @@ const Members = () => {
           type: "loop",
           pagination: false,
         }}
-        className="w-full hidden tablet:block"
+        className="w-full hidden pc:block"
       >
         <SplideTrack>
           <SplideSlide>
@@ -171,7 +171,7 @@ const Members = () => {
       </Splide>
 
       {/* sp */}
-      <div className="tablet:hidden">
+      <div className="pc:hidden">
         <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
           <img
             src="/images/members/tyotohaya.png"
