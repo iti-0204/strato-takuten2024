@@ -39,7 +39,7 @@ const Flow = ({ num, title, caption, img }) => {
         <h3 className="text-black font-jp tracking-jp font-black text-2xl mb-4">
           {title}
         </h3>
-        <p className="text-black font-jp tracking-jp font-normal">{caption2}</p>
+        <p className="text-black font-jp tracking-jp font-normal h-36 pc:h-auto">{caption2}</p>
       </div>
       <img src={img} alt="" className="w-flowImg object-cover" />
     </div>
