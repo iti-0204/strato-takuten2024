@@ -15,12 +15,17 @@ import "./App.css";
 // import Footer from "./components/layouts/Footer";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Home from "./components/layouts/Home";
+import Exhibit from "./components/layouts/Exhibit";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/chotohaya" element={<Exhibit />} />
+        <Route path="/nemu" element={<Exhibit />} />
+        <Route path="/rising-sun" element={<Exhibit />} />
+        <Route path="/korikori-jonjon" element={<Exhibit />} />
       </Routes>
     </BrowserRouter>
   );
