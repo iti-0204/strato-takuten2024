@@ -24,32 +24,32 @@ const About = () => {
         </div>
       </div>
       <img
-        src="/images/perusona.png"
+        src="/images/about/perusona.png"
         alt="ペルソナ画像"
         className="hidden pc:block absolute top-[-35%] right-0 bottom-0 m-auto left-[-75%] max-w-40 h-auto w-[12%] rounded-2xl shadow-card aspect-[160/144]"
       />
       <img
-        src="/images/buresuto.png"
+        src="/images/about/buresuto.png"
         alt="ブレスト画像"
         className="hidden pc:block absolute top-[-10%] right-0 bottom-0 m-auto left-[-65%] max-w-24 h-auto w-[6%] rounded-2xl shadow-card aspect-[1/1]"
       />
       <img
-        src="/images/test.png"
+        src="/images/about/test.png"
         alt="ユーザーテスト画像"
         className="hidden pc:block absolute top-[55%] right-0 bottom-0 m-auto left-[-80%] max-w-24 h-auto w-[6%] rounded-2xl shadow-card aspect-[1/1]"
       />
       <img
-        src="/images/interview.png"
+        src="/images/about/interview.png"
         alt="インタビューシート画像"
         className="hidden pc:block absolute top-[-20%] right-0 bottom-0 m-auto left-[60%] max-w-24 h-auto w-[6%] rounded-2xl shadow-card aspect-[1/1]"
       />
       <img
-        src="/images/map.png"
+        src="/images/about/map.png"
         alt="ジャーニーマップ画像"
         className="hidden pc:block absolute top-[35%] right-0 bottom-0 m-auto left-[70%] max-w-40 h-auto w-[15%] rounded-2xl shadow-card aspect-[160/144]"
       />
       <img
-        src="/images/presentation.png"
+        src="/images/about/presentation.png"
         alt="プレゼン画像"
         className="hidden pc:block absolute top-[60%] right-0 bottom-0 m-auto left-[60%] max-w-24 h-auto w-[6%] rounded-2xl shadow-card aspect-[1/1]"
       />

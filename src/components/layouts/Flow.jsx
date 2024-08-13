@@ -18,7 +18,7 @@ const Flow = () => {
           caption={
             "ユーザーリサーチを通じて、彼らのニーズや困りごとを深く理解することに努めました。<br/>ブレインストーミングを重ね、多様なアイデアを出し合い、根本的な課題を明らかにしま<br/>した。"
           }
-          img={"/images/buresutoFlow.png"}
+          img={"/images/flow/buresutoFlow.png"}
         />
         <FlowUI
           num={"02"}
@@ -26,7 +26,7 @@ const Flow = () => {
           caption={
             "ユーザーリサーチを通じて、彼らのニーズや困りごとを深く理解することに努めました。<br/>ブレインストーミングを重ね、多様なアイデアを出し合い、根本的な課題を明らかにしま<br/>した。"
           }
-          img={"/images/interviewFlow.png"}
+          img={"/images/flow/interviewFlow.png"}
         />
         <FlowUI
           num={"03"}
@@ -34,7 +34,7 @@ const Flow = () => {
           caption={
             "ユーザーリサーチを通じて、彼らのニーズや困りごとを深く理解することに努めました。<br/>ブレインストーミングを重ね、多様なアイデアを出し合い、根本的な課題を明らかにしま<br/>した。"
           }
-          img={"/images/perusonaFlow.png"}
+          img={"/images/flow/perusonaFlow.png"}
         />
         <FlowUI
           num={"04"}
@@ -42,7 +42,7 @@ const Flow = () => {
           caption={
             "ユーザーリサーチを通じて、彼らのニーズや困りごとを深く理解することに努めました。<br/>ブレインストーミングを重ね、多様なアイデアを出し合い、根本的な課題を明らかにしま<br/>した。"
           }
-          img={"/images/sheetFlow.png"}
+          img={"/images/flow/sheetFlow.png"}
         />
         <FlowUI
           num={"05"}
@@ -50,7 +50,7 @@ const Flow = () => {
           caption={
             "ユーザーリサーチを通じて、彼らのニーズや困りごとを深く理解することに努めました。<br/>ブレインストーミングを重ね、多様なアイデアを出し合い、根本的な課題を明らかにしま<br/>した。"
           }
-          img={"/images/testFlow.png"}
+          img={"/images/flow/testFlow.png"}
         />
       </div>
     </div>
