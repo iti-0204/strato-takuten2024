@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 
 import { BiChevronDown } from "react-icons/bi";
 
+
 const Fv = () => {
   return (
     <div className="bg-fv w-full h-screen bg-cover text-center tablet:pt-[40vh] z-10 tablet:block flex flex-col justify-center items-center">
@@ -15,7 +16,9 @@ const Fv = () => {
         UI/UX <br />
         Service Design
       </p>
-      <Button type={"btnL"} />
+      <a href="#works">
+        <Button type={"btnL"} />
+      </a>
       <p className="font-bold font-en tracking-en text-xl text-primary mt-20 mb-2">
         scroll
       </p>

@@ -1,13 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Card = ({ team, title, caption, img }) => {
+const Card = ({ team, title, caption, img, url }) => {
+  const navigate = useNavigate();
+
+  const onClickCard = () => navigate(url);
   return (
-    <div className="tablet:w-card tablet:h-card w-[335px] h-auto p-6 shadow-card rounded-2xl text-left">
+    <button
+      onClick={onClickCard}
+      className="tablet:w-card tablet:h-card w-[335px] h-auto p-6 shadow-card rounded-2xl text-left"
+    >
       <img src={img} alt="" className="w-full h-cardImg object-cover mb-4" />
       <p className="text-gray text-xl font-jp mb-1">{team}</p>
       <p className="text-primary text-3.5xl font-jp font-black mb-4">{title}</p>
       <p className="text-black text-base font-jp">{caption}</p>
-    </div>
+    </button>
   );
 };
 

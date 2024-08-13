@@ -35,7 +35,7 @@ const Members = () => {
                   className="w-[240px] h-[240px]"
                 />
                 <p className="my-4">ちょっと早朝やなのに。</p>
-                <Button type={"btnM"} />
+                <Button type={"btnM"} title={"Works"} url={"/chotohaya"} />
               </div>
               <div>
                 <img
@@ -43,7 +43,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">3M みせん</p>
               </div>
               <div>
                 <img
@@ -51,7 +51,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">3M よう</p>
               </div>
               <div>
                 <img
@@ -59,7 +59,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">3M ちひろ</p>
               </div>
             </div>
           </SplideSlide>
@@ -71,8 +71,8 @@ const Members = () => {
                   alt=""
                   className="w-[240px] h-[240px]"
                 />
-                <p className="my-4">ちょっと早朝やなのに。</p>
-                <Button type={"btnM"} />
+                <p className="my-4">音む</p>
+                <Button type={"btnM"} title={"Works"} url={"/nemu"} />
               </div>
               <div>
                 <img
@@ -80,7 +80,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">3M はむ</p>
               </div>
               <div>
                 <img
@@ -88,7 +88,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">2N もねこ</p>
               </div>
             </div>
           </SplideSlide>
@@ -100,8 +100,12 @@ const Members = () => {
                   alt=""
                   className="w-[240px] h-[240px]"
                 />
-                <p className="my-4">ちょっと早朝やなのに。</p>
-                <Button type={"btnM"} />
+                <p className="my-4">
+                  ライジングサン
+                  <br />
+                  〜恋の予感〜
+                </p>
+                <Button type={"btnM"} title={"Works"} url={"/rising-sun"} />
               </div>
               <div>
                 <img
@@ -109,7 +113,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">2N さな</p>
               </div>
               <div>
                 <img
@@ -125,7 +129,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">2M まふ</p>
               </div>
             </div>
           </SplideSlide>
@@ -137,8 +141,12 @@ const Members = () => {
                   alt=""
                   className="w-[240px] h-[240px]"
                 />
-                <p className="my-4">ちょっと早朝やなのに。</p>
-                <Button type={"btnM"} />
+                <p className="my-4">コリコリジョンジョン</p>
+                <Button
+                  type={"btnM"}
+                  title={"Works"}
+                  url={"/korikori-jonjon"}
+                />
               </div>
               <div>
                 <img
@@ -146,7 +154,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">1M 栄太郎</p>
               </div>
               <div>
                 <img
@@ -154,7 +162,7 @@ const Members = () => {
                   alt=""
                   className="h-40 w-40"
                 />
-                <p className="mt-3">2M log</p>
+                <p className="mt-3">1M ささKING</p>
               </div>
             </div>
           </SplideSlide>
@@ -179,7 +187,7 @@ const Members = () => {
             className="w-[240px] h-[240px] mx-auto "
           />
           <p className="my-4">ちょっと早朝やなのに。</p>
-          <Button type={"btnM"} />
+          <Button type={"btnM"} title={"Works"} url={"/chotohaya"} />
         </div>
         <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
           <img
@@ -187,8 +195,8 @@ const Members = () => {
             alt=""
             className="w-[240px] h-[240px] mx-auto "
           />
-          <p className="my-4">ちょっと早朝やなのに。</p>
-          <Button type={"btnM"} />
+          <p className="my-4">音む</p>
+          <Button type={"btnM"} title={"Works"} url={"/nemu"} />
         </div>
         <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
           <img
@@ -196,8 +204,12 @@ const Members = () => {
             alt=""
             className="w-[240px] h-[240px] mx-auto "
           />
-          <p className="my-4">ちょっと早朝やなのに。</p>
-          <Button type={"btnM"} />
+          <p className="my-4">
+            ライジングサン
+            <br />
+            〜恋の予感〜
+          </p>
+          <Button type={"btnM"} title={"Works"} url={"/rising-sun"} />
         </div>
         <div className="text-center font-jp tracking-jp font-bold text-xl mb-12">
           <img
@@ -205,8 +217,8 @@ const Members = () => {
             alt=""
             className="w-[240px] h-[240px] mx-auto "
           />
-          <p className="my-4">ちょっと早朝やなのに。</p>
-          <Button type={"btnM"} />
+          <p className="my-4">コリコリジョンジョン</p>
+          <Button type={"btnM"} title={"Works"} url={"/korikori-jonjon"} />
         </div>
       </div>
     </div>

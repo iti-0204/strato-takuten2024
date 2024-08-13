@@ -1,16 +1,32 @@
 import React from "react";
 import { BiChevronRight } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
-const Button = ({ type }) => {
+const Button = ({ type, title, url }) => {
+  const navigate = useNavigate();
+
+  const onClickChotohaya = () => navigate("/chotoaya");
+  const onClickNemu = () => navigate("/nemu");
+  const onClickRisingSun = () => navigate("/rising-sun");
+  const onClickKorikoriJonjon = () => navigate("/korikori-jonjon");
+
+  let onClickButton;
+
   switch (type) {
     case "btnM":
+      if (title == "Works") {
+        onClickButton = () => navigate(url);
+      } else {
+        onClickButton = () => window.open(url);
+      }
       return (
         <button
+          onClick={onClickButton}
           className={
             "bg-gradient-to-br from-primary to-buttonGrad text-white font-bold font-en tracking-en rounded text-base h-8 w-38"
           }
         >
-          <span className="align-middle ml-4">Works</span>
+          <span className="align-middle ml-4">{title}</span>
           <BiChevronRight
             size={24}
             className={"inline-block text-2xl font-bold ml-4"}
@@ -33,29 +49,29 @@ const Button = ({ type }) => {
         </button>
       );
 
-    case "web":
-      return (
-        <button
-          className={
-            "bg-gradient-to-br from-primary to-buttonGrad text-white font-jp tracking-en rounded text-xxs h-8 w-38"
-          }
-        >
-          <span className="align-middle ml-4">webサイト</span>
-          <BiChevronRight className={"inline-block text-2xl font-bold  ml-4"} />
-        </button>
-      );
+    // case "web":
+    //   return (
+    //     <button
+    //       className={
+    //         "bg-gradient-to-br from-primary to-buttonGrad text-white font-jp tracking-en rounded text-xxs h-8 w-38"
+    //       }
+    //     >
+    //       <span className="align-middle ml-4">webサイト</span>
+    //       <BiChevronRight className={"inline-block text-2xl font-bold  ml-4"} />
+    //     </button>
+    //   );
 
-    case "UI":
-      return (
-        <button
-          className={
-            "bg-gradient-to-br from-primary to-buttonGrad text-white font-jp tracking-en rounded text-xxs h-8 w-38"
-          }
-        >
-          <span className="align-middle ml-4">アプリモックアップ</span>
-          <BiChevronRight className={"inline-block text-2xl font-bold ml-3"} />
-        </button>
-      );
+    // case "UI":
+    //   return (
+    //     <button
+    //       className={
+    //         "bg-gradient-to-br from-primary to-buttonGrad text-white font-jp tracking-en rounded text-xxs h-8 w-38"
+    //       }
+    //     >
+    //       <span className="align-middle ml-4">アプリモックアップ</span>
+    //       <BiChevronRight className={"inline-block text-2xl font-bold ml-3"} />
+    //     </button>
+    //   );
 
     default:
   }
