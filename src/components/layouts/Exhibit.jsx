@@ -1,24 +1,37 @@
 import React from "react";
 import Header from "./Header";
 import Button from "../ui/Button";
+import Footer from "./Footer";
 
 import { BiChevronLeft } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const Exhibit = ({ img, workNum, names, title, url }) => {
+  const navigate = useNavigate();
+  const onClickBack = () => {
+    navigate("/");
+  };
+
+  // const onClickBack = () => {
+  //   window.location.replace("http://localhost:3000/#flow");
+  // };
+
   return (
     <div>
       <Header></Header>
-      <div className="w-[85%] mx-auto font-jp tracking-jp">
+      <div className="w-[85%] mx-auto font-jp tracking-jp mt-[36px]">
         <div className="flex items-center text-gray mb-6">
           <BiChevronLeft />
-          <p>一覧に戻る</p>
+          <button onClick={onClickBack}>
+            <p>一覧に戻る</p>
+          </button>
         </div>
         <div className="flex items-center mb-6">
           {/* <img src="/images/teamLogo/seemee.png" alt="" className="w-[15%]" /> */}
           <p className="text-3xl pb-[1%]">{title}</p>
         </div>
       </div>
-      <div className="w-[85%] flex justify-between mx-auto font-jp tracking-jp font-bold ">
+      <div className="w-[85%] flex justify-between mx-auto font-jp tracking-jp font-bold mb-[36px]">
         <img src={img.panel} alt="" className="w-[64%]" />
         <div className="shadow-card p-[3%] w-[35%] h-fit">
           <div className="text-center">
@@ -50,6 +63,9 @@ const Exhibit = ({ img, workNum, names, title, url }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="bg-[#FFF1E4]">
+        <Footer />
       </div>
     </div>
   );

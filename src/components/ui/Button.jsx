@@ -33,7 +33,7 @@ const Button = ({ type, title, url }) => {
         <button
           onClick={onClickButton}
           className={
-            "bg-gradient-to-br text-white font-bold font-en tracking-en rounded text-base h-8 w-38 flex justify-center items-center" +
+            "bg-gradient-to-br text-white font-bold font-en tracking-en rounded text-base h-8 w-38 flex justify-center items-center mx-auto" +
             changeGrad
           }
         >

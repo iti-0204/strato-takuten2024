@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <div>
       <div id="mainvisual">
-        <Player
+        {/* <Player
           autoplay
           loop={false}
           src={lottieSrc}
@@ -54,7 +54,7 @@ const Home = () => {
           }}
           id="first-view"
           className="h-screen scale-[1.3]"
-        />
+        /> */}
 
         <Fv />
       </div>

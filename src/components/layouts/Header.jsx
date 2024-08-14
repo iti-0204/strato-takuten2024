@@ -1,5 +1,6 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
@@ -19,22 +20,22 @@ const Header = () => {
       <nav id="nav">
         <ul className="flex justify-between items-center gap-14 font-bold font-en tracking-en text-xl text-primary">
           <li>
-            <a href="#works">Works</a>
+            <HashLink to="/#works">Works</HashLink>
           </li>
           <li>
-            <a href="#flow">Flow</a>
+            <HashLink to="/#flow">Flow</HashLink>
           </li>
           <li>
-            <a href="#members">Members</a>
+            <HashLink to="/#members">Members</HashLink>
           </li>
           <li>
-            <a
-              href="https://geikou-takuten.com/"
+            <HashLink
+              to="https://geikou-takuten.com/"
               className="text-jp tracking-jp font-bold flex items-center gap-2"
             >
               <FaExternalLinkAlt />
               卓展サイトへ
-            </a>
+            </HashLink>
           </li>
         </ul>
       </nav>
