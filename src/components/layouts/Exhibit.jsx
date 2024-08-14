@@ -5,7 +5,6 @@ import Button from "../ui/Button";
 import { BiChevronLeft } from "react-icons/bi";
 
 const Exhibit = ({ img, workNum, names, title, url }) => {
-  console.log(url);
   return (
     <div>
       <Header></Header>
