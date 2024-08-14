@@ -4,7 +4,8 @@ import Button from "../ui/Button";
 
 import { BiChevronLeft } from "react-icons/bi";
 
-const Exhibit = () => {
+const Exhibit = ({ img, workNum, names, title, url }) => {
+  console.log(url);
   return (
     <div>
       <Header></Header>
@@ -15,40 +16,38 @@ const Exhibit = () => {
         </div>
         <div className="flex items-center mb-6">
           {/* <img src="/images/teamLogo/seemee.png" alt="" className="w-[15%]" /> */}
-          <p className="text-3xl pb-[1%]">seemee</p>
+          <p className="text-3xl pb-[1%]">{title}</p>
         </div>
       </div>
       <div className="w-[85%] flex justify-between mx-auto font-jp tracking-jp font-bold ">
-        <img
-          src="/images/panel/chotohayaPanel.png"
-          alt=""
-          className="w-[64%]"
-        />
+        <img src={img.panel} alt="" className="w-[64%]" />
         <div className="shadow-card p-[3%] w-[35%] h-fit">
           <div className="text-center">
-            <img
-              src="/images/members/tyotohaya.png"
-              alt=""
-              className="w-[55%] mx-auto "
-            />
-            <p className="mt-4 mb-[36px]">ちょっと早朝やなのに。</p>
+            <img src={img.team} alt="" className="w-[55%] mx-auto " />
+            <p className="mt-4 mb-[36px]">{names.team}</p>
           </div>
           <div className="flex justify-center gap-[10%] ">
-            <Button type={"btnM"} title={"webサイト"} url={""} />
-            <Button type={"btnM"} title={"アプリモックアップ"}/>
+            {workNum == 2 && (
+              <Button type={"btnM"} title={"webサイト"} url={url.web} />
+            )}
+            <Button
+              type={"btnM"}
+              title={"アプリモックアップ"}
+              url={url.figma}
+            />
           </div>
           <div className="flex flex-wrap justify-between text-sm mt-[36px]">
             <div className="w-[45%] text-center">
-              <img src="/images/members/misen.png" alt="" className="mb-4" />
-              <p className="inline text-center">3M みせん</p>
+              <img src={img.member1} alt="" className="mb-4" />
+              <p className="inline text-center">{names.member1}</p>
             </div>
             <div className="w-[45%] text-center">
-              <img src="/images/members/you.png" alt="" className="mb-4" />
-              <p className="inline text-center">3M よう</p>
+              <img src={img.member2} alt="" className="mb-4" />
+              <p className="inline text-center">{names.member2}</p>
             </div>
             <div className="w-[45%] text-center mx-auto">
-              <img src="/images/members/chihiro.png" alt="" className="mb-4" />
-              <p className="inline text-center">3M ちひろ</p>
+              <img src={img.member3} alt="" className="mb-4" />
+              <p className="inline text-center">{names.member3}</p>
             </div>
           </div>
         </div>
