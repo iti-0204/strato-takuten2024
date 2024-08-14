@@ -31,10 +31,10 @@ const Works = () => {
           url={"/nemu"}
         />
         <Card
-          team={"4Mチーム"}
-          title={"サービスタイトル"}
+          team={"ライジングサン〜恋の予感〜"}
+          title={"Solop"}
           caption={
-            "大切なプレゼントもう迷わない。〇〇の◯◯のサービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要"
+            "solo なlife を help するあなただけの相棒がひとり暮らしを助けるお役立ちアプリ"
           }
           img={"/images/teamLogo/solop.png"}
           url={"/rising-sun"}
