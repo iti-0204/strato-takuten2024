@@ -19,6 +19,7 @@ const Exhibit = ({ img, workNum, names, title, url }) => {
   return (
     <div>
       <Header></Header>
+
       <div className="w-[85%] mx-auto font-jp tracking-jp mt-[36px]">
         <div className="flex items-center text-gray mb-6">
           <BiChevronLeft />
@@ -26,21 +27,26 @@ const Exhibit = ({ img, workNum, names, title, url }) => {
             <p>一覧に戻る</p>
           </button>
         </div>
-        <div className="flex items-center mb-6">
+        <div className="mb-6">
           {/* <img src="/images/teamLogo/seemee.png" alt="" className="w-[15%]" /> */}
-          <p className="text-3xl pb-[1%]">{title}</p>
+          <p className="text-3xl pb-[1%] text-center pc:text-left">
+            {title}
+          </p>
         </div>
       </div>
-      <div className="w-[85%] flex justify-between mx-auto font-jp tracking-jp font-bold mb-[36px]">
-        <img src={img.panel} alt="" className="w-[64%]" />
-        <div className="shadow-card p-[3%] w-[35%] h-fit">
+
+      <div className="w-[85%] flex justify-between flex-col-reverse items-center pc:items-start pc:flex-row mx-auto font-jp tracking-jp font-bold mb-[36px]">
+        <img src={img.panel} alt="" className="pc:w-[64%]" />
+        <div className="pc:shadow-card p-[3%] pc:w-[35%] h-fit pc:mb-0 mb-10">
           <div className="text-center">
             <img src={img.team} alt="" className="w-[55%] mx-auto " />
             <p className="mt-4 mb-[36px]">{names.team}</p>
           </div>
-          <div className="flex justify-center gap-[10%] ">
+          <div className="flex justify-center gap-[10%] flex-wrap">
             {workNum == 2 && (
-              <Button type={"btnM"} title={"webサイト"} url={url.web} />
+              <div className="mb-5">
+                <Button type={"btnM"} title={"webサイト"} url={url.web} />
+              </div>
             )}
             <Button
               type={"btnM"}
