@@ -22,7 +22,7 @@ const Exhibit = () => {
             <p>ちょっと早朝やなのに。</p>
           </div>
           <div className="flex justify-between">
-            <Button type={"btnM"} />
+            <Button type={"btnM"} title={"Works"} />
             <Button type={"btnM"} />
           </div>
           <div className="flex flex-wrap justify-between">
