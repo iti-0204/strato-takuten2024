@@ -33,9 +33,9 @@ const Exhibit = () => {
             />
             <p className="mt-4 mb-[36px]">ちょっと早朝やなのに。</p>
           </div>
-          <div className="flex justify-between">
-            <Button type={"btnM"} title={"Works"} />
-            <Button type={"btnM"} />
+          <div className="flex justify-center gap-[10%] ">
+            <Button type={"btnM"} title={"webサイト"} url={""} />
+            <Button type={"btnM"} title={"アプリモックアップ"}/>
           </div>
           <div className="flex flex-wrap justify-between text-sm mt-[36px]">
             <div className="w-[45%] text-center">

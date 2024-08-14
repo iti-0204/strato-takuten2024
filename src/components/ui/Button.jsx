@@ -12,6 +12,16 @@ const Button = ({ type, title, url }) => {
 
   let onClickButton;
 
+  let addSpaceText = " ";
+  let changeGrad = " ";
+
+  if (title == "アプリモックアップ" || title == "webサイト") {
+    addSpaceText = " ml-0 text-[10px]";
+    if (title == "webサイト") {
+      changeGrad = " from-[#FD388B] to-[#FCDAE8]";
+    }
+  }
+
   switch (type) {
     case "btnM":
       if (title == "Works") {
@@ -23,13 +33,13 @@ const Button = ({ type, title, url }) => {
         <button
           onClick={onClickButton}
           className={
-            "bg-gradient-to-br from-primary to-buttonGrad text-white font-bold font-en tracking-en rounded text-base h-8 w-38"
+            "bg-gradient-to-br from-primary to-buttonGrad text-white font-bold font-en tracking-en rounded text-base h-8 w-38 flex justify-center items-center" + changeGrad
           }
         >
-          <span className="align-middle ml-4">{title}</span>
+          <span className={"align-middle ml-4" + addSpaceText}>{title}</span>
           <BiChevronRight
             size={24}
-            className={"inline-block text-2xl font-bold ml-4"}
+            className={"inline-block text-2xl font-bold ml-4" + addSpaceText}
           />
         </button>
       );
