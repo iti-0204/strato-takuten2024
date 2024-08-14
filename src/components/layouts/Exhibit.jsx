@@ -2,10 +2,22 @@ import React from "react";
 import Header from "./Header";
 import Button from "../ui/Button";
 
+import { BiChevronLeft } from "react-icons/bi";
+
 const Exhibit = () => {
   return (
     <div>
       <Header></Header>
+      <div className="w-[85%] mx-auto font-jp tracking-jp">
+        <div className="flex items-center text-gray mb-6">
+          <BiChevronLeft />
+          <p>一覧に戻る</p>
+        </div>
+        <div className="flex items-center mb-6">
+          {/* <img src="/images/teamLogo/seemee.png" alt="" className="w-[15%]" /> */}
+          <p className="text-3xl pb-[1%]">seemee</p>
+        </div>
+      </div>
       <div className="w-[85%] flex justify-between mx-auto font-jp tracking-jp font-bold ">
         <img
           src="/images/panel/chotohayaPanel.png"
