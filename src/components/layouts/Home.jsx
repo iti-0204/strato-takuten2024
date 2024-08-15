@@ -22,10 +22,14 @@ const Home = () => {
 
   // Lottie振り分け
   let lottieSrc = SpAnimation;
+  let lottieScale = "";
+
   if (isPC) {
     lottieSrc = PcAnimation;
+    lottieScale = " scale-[1.3]";
   } else if (isTablet) {
     lottieSrc = TabletAnimation;
+    lottieScale = " scale-[1.7]";
   }
 
   // LottieComplete時の処理
@@ -52,7 +56,7 @@ const Home = () => {
             }
           }}
           id="first-view"
-          className="h-screen scale-[1.3]"
+          className={"h-screen" + lottieScale}
         />
 
         <Fv />
