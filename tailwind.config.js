@@ -8,9 +8,6 @@ module.exports = {
       jp: ["Zen Kaku Gothic New"],
     },
     //フォントサイズ
-    // fontSize: {
-    //   xs: "10px",
-    // },
     // 字間
     letterSpacing: {
       en: ".1em",
