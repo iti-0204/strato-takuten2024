@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/layouts/Home";
 import Exhibit from "./components/layouts/Exhibit";
 
@@ -35,14 +35,14 @@ const nemu = {
   },
   workNum: 1,
   names: {
-    team: "ちょっと早朝やなのに。",
+    team: "音む",
     member1: "3M はむ",
     member2: "2M もねこ",
   },
   title: "さぼーど",
   url: {
     figma:
-      "https://www.figma.com/proto/pTnH4ZUwIhjGXW2kuNe7QH/ui-tyotohaya?page-id=107%3A175&node-id=519-6721&viewport=54%2C-662%2C0.22&t=F9zn6L0IodktpKuV-1&scaling=scale-down&content-scaling=fixed",
+      "https://www.figma.com/proto/dZYF2ivvJhJfozzAMyo2am/ui-nemu?page-id=0%3A1&node-id=47-5281&viewport=-2813%2C-529%2C0.15&t=QkKoGAUwbv4ilRLo-1&scaling=min-zoom&content-scaling=fixed",
     web: "",
   },
 };
@@ -65,8 +65,8 @@ const risingsun = {
   title: "Solop",
   url: {
     figma:
-      "https://www.figma.com/proto/pTnH4ZUwIhjGXW2kuNe7QH/ui-tyotohaya?page-id=107%3A175&node-id=519-6721&viewport=54%2C-662%2C0.22&t=F9zn6L0IodktpKuV-1&scaling=scale-down&content-scaling=fixed",
-    web: "",
+      "https://www.figma.com/proto/a4HSIUFTzLApel6H24PEWU/uirisingsun?page-id=0%3A1&node-id=47-125&viewport=-578%2C-2855%2C0.34&t=OSdGNR5WgxT0Rorq-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=47%3A125&show-proto-sidebar=1",
+    web: "https://iti-0204.github.io/solop/",
   },
 };
 
@@ -86,7 +86,7 @@ const korikorijonjon = {
   title: "Clocide",
   url: {
     figma:
-      "https://www.figma.com/proto/pTnH4ZUwIhjGXW2kuNe7QH/ui-tyotohaya?page-id=107%3A175&node-id=519-6721&viewport=54%2C-662%2C0.22&t=F9zn6L0IodktpKuV-1&scaling=scale-down&content-scaling=fixed",
+      "https://www.figma.com/proto/1IByLziOx5zNWvSkptAT2y/ui-korikorijonjon?page-id=0%3A1&node-id=80-816&viewport=1253%2C4958%2C0.43&t=5tqnhdFvLNIlqHCq-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=80%3A816&show-proto-sidebar=1",
     web: "",
   },
 };

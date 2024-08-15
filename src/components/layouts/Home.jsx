@@ -14,7 +14,6 @@ import TabletAnimation from "../../TabletAnimation.json";
 
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useMediaQuery } from "react-responsive";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 
 const Home = () => {
   // メディアクエリ
@@ -41,7 +40,7 @@ const Home = () => {
   return (
     <div>
       <div id="mainvisual">
-        {/* <Player
+        <Player
           autoplay
           loop={false}
           src={lottieSrc}
@@ -54,7 +53,7 @@ const Home = () => {
           }}
           id="first-view"
           className="h-screen scale-[1.3]"
-        /> */}
+        />
 
         <Fv />
       </div>

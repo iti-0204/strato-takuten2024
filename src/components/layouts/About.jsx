@@ -1,11 +1,8 @@
 import React from "react";
 import Title from "../ui/Title";
-import { useMediaQuery } from "react-responsive";
 
 const About = () => {
-  const isSpTablet = useMediaQuery({ query: "(max-width: 768px)" });
-  const isPC = useMediaQuery({ query: "(min-width: 1000px)" });
-
+  // const isSpTablet = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <div className="bg-fv w-full tablet:h-[90vh] h-[70vh] bg-cover text-center font-jp tracking-jp text-black pc:relative">
       <div className="h-full flex flex-col justify-center">

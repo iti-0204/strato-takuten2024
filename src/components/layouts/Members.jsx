@@ -35,7 +35,9 @@ const Members = () => {
                   className="w-[240px] h-[240px]"
                 />
                 <p className="my-4">ちょっと早朝やなのに。</p>
-                <Button type={"btnM"} title={"Works"} url={"/chotohaya"} />
+                <div className="mx-auto w-fit">
+                  <Button type={"btnM"} title={"Works"} url={"/chotohaya"} />
+                </div>
               </div>
               <div>
                 <img
@@ -72,7 +74,9 @@ const Members = () => {
                   className="w-[240px] h-[240px]"
                 />
                 <p className="my-4">音む</p>
-                <Button type={"btnM"} title={"Works"} url={"/nemu"} />
+                <div className="mx-auto w-fit">
+                  <Button type={"btnM"} title={"Works"} url={"/nemu"} />
+                </div>
               </div>
               <div>
                 <img
@@ -105,7 +109,9 @@ const Members = () => {
                   <br />
                   〜恋の予感〜
                 </p>
-                <Button type={"btnM"} title={"Works"} url={"/rising-sun"} />
+                <div className="mx-auto w-fit">
+                  <Button type={"btnM"} title={"Works"} url={"/rising-sun"} />
+                </div>
               </div>
               <div>
                 <img
@@ -142,11 +148,13 @@ const Members = () => {
                   className="w-[240px] h-[240px]"
                 />
                 <p className="my-4">コリコリジョンジョン</p>
-                <Button
-                  type={"btnM"}
-                  title={"Works"}
-                  url={"/korikori-jonjon"}
-                />
+                <div className="mx-auto w-fit">
+                  <Button
+                    type={"btnM"}
+                    title={"Works"}
+                    url={"/korikori-jonjon"}
+                  />
+                </div>
               </div>
               <div>
                 <img

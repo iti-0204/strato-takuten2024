@@ -4,18 +4,9 @@ import Button from "../ui/Button";
 import Footer from "./Footer";
 
 import { BiChevronLeft } from "react-icons/bi";
-import { useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Exhibit = ({ img, workNum, names, title, url }) => {
-  const navigate = useNavigate();
-  const onClickBack = () => {
-    navigate("/");
-  };
-
-  // const onClickBack = () => {
-  //   window.location.replace("http://localhost:3000/#flow");
-  // };
-
   return (
     <div>
       <Header></Header>
@@ -23,15 +14,11 @@ const Exhibit = ({ img, workNum, names, title, url }) => {
       <div className="w-[85%] mx-auto font-jp tracking-jp mt-[36px]">
         <div className="flex items-center text-gray mb-6">
           <BiChevronLeft />
-          <button onClick={onClickBack}>
-            <p>一覧に戻る</p>
-          </button>
+          <HashLink to="/#works">一覧に戻る</HashLink>
         </div>
         <div className="mb-6">
           {/* <img src="/images/teamLogo/seemee.png" alt="" className="w-[15%]" /> */}
-          <p className="text-3xl pb-[1%] text-center pc:text-left">
-            {title}
-          </p>
+          <p className="text-3xl pb-[1%] text-center pc:text-left">{title}</p>
         </div>
       </div>
 
@@ -43,7 +30,7 @@ const Exhibit = ({ img, workNum, names, title, url }) => {
             <p className="mt-4 mb-[36px]">{names.team}</p>
           </div>
           <div className="flex justify-center gap-[10%] flex-wrap">
-            {workNum == 2 && (
+            {workNum === 2 && (
               <div className="mb-5">
                 <Button type={"btnM"} title={"webサイト"} url={url.web} />
               </div>

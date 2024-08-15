@@ -5,26 +5,21 @@ import { useNavigate } from "react-router-dom";
 const Button = ({ type, title, url }) => {
   const navigate = useNavigate();
 
-  const onClickChotohaya = () => navigate("/chotoaya");
-  const onClickNemu = () => navigate("/nemu");
-  const onClickRisingSun = () => navigate("/rising-sun");
-  const onClickKorikoriJonjon = () => navigate("/korikori-jonjon");
-
   let onClickButton;
 
   let addSpaceText = " ml-4";
   let changeGrad = " from-primary to-buttonGrad";
 
-  if (title == "アプリモックアップ" || title == "webサイト") {
+  if (title === "アプリモックアップ" || title === "webサイト") {
     addSpaceText = " ml-0 text-[10px]";
-    if (title == "webサイト") {
+    if (title === "webサイト") {
       changeGrad = " from-[#FD388B] to-[#FCDAE8]";
     }
   }
 
   switch (type) {
     case "btnM":
-      if (title == "Works") {
+      if (title === "Works") {
         onClickButton = () => navigate(url);
       } else {
         onClickButton = () => window.open(url);
@@ -33,7 +28,7 @@ const Button = ({ type, title, url }) => {
         <button
           onClick={onClickButton}
           className={
-            "bg-gradient-to-br text-white font-bold font-en tracking-en rounded text-base h-8 w-38 flex justify-center items-center pc:mx-auto tablet:mx-0 mx-auto" +
+            "bg-gradient-to-br text-white font-bold font-en tracking-en rounded text-base h-8 w-38 flex justify-center items-center  tablet:mx-0 " +
             changeGrad
           }
         >
