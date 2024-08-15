@@ -13,19 +13,19 @@ const Works = () => {
       </div>
       <div className="flex tablet:flex-wrap tablet:gap-12 pc:flex-row flex-col items-center gap-[36px]">
         <Card
-          team={"4Mチーム"}
-          title={"サービスタイトル"}
+          team={"ちょっと早朝やなのに。"}
+          title={"seemee"}
           caption={
-            "大切なプレゼントもう迷わない。〇〇の◯◯のサービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要"
+            "普段の悩みを気軽に相談！人生の先輩から返事が返ってくる！あなたも誰かの背中を押せる！"
           }
           img={"/images/teamLogo/seemee.png"}
           url={"/chotohaya"}
         />
         <Card
-          team={"4Mチーム"}
-          title={"サービスタイトル"}
+          team={"音む"}
+          title={"さぼーど"}
           caption={
-            "大切なプレゼントもう迷わない。〇〇の◯◯のサービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要"
+            "「明日は晩ごはんいるの？バイトがあるんだっけ？」毎日毎日、ちょっとめんどくさいこのやりとり…さぼーどで、さぼってみませんか？"
           }
           img={"/images/teamLogo/subBOARD.png"}
           url={"/nemu"}
@@ -40,10 +40,10 @@ const Works = () => {
           url={"/rising-sun"}
         />
         <Card
-          team={"4Mチーム"}
-          title={"サービスタイトル"}
+          team={"コリコリジョンジョン"}
+          title={"Clocide"}
           caption={
-            "大切なプレゼントもう迷わない。〇〇の◯◯のサービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要サービス概要"
+            "ClocideはAIによる簡単な診断、自分自身の客観視を行うことによって、服選びに対して苦手意識を持っている方々に服装の提案を行うアプリです。"
           }
           img={"/images/teamLogo/Clocide.png"}
           url={"/korikori-jonjon"}
