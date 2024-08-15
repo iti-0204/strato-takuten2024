@@ -50,15 +50,24 @@ const Header = () => {
             <span></span>
           </label>
           <div class="menu-content">
-            <ul>
+            <ul className="font-en tracking-en font-bold">
               <li>
-                <a href="#">メニューリンク1</a>
+                <HashLink to="/#works">Works</HashLink>
               </li>
               <li>
-                <a href="#">メニューリンク2</a>
+                <HashLink to="/#flow">Flow</HashLink>
               </li>
               <li>
-                <a href="#">メニューリンク3</a>
+                <HashLink to="/#members">Members</HashLink>
+              </li>
+              <li>
+                <HashLink
+                  to="https://geikou-takuten.com/"
+                  className="text-jp tracking-jp font-bold flex items-center gap-2"
+                >
+                  {/* <FaExternalLinkAlt /> */}
+                  卓展サイトへ
+                </HashLink>
               </li>
             </ul>
           </div>

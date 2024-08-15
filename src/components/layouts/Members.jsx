@@ -7,6 +7,7 @@ import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/skyblue";
 import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
+import { HashLink } from "react-router-hash-link";
 
 const Members = () => {
   return (
@@ -39,30 +40,30 @@ const Members = () => {
                   <Button type={"btnM"} title={"Works"} url={"/chotohaya"} />
                 </div>
               </div>
-              <div>
+              <HashLink to="/chotohaya">
                 <img
                   src="/images/members/misen.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">3M みせん</p>
-              </div>
-              <div>
+              </HashLink>
+              <HashLink to="/chotohaya">
                 <img
                   src="/images/members/you.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">3M よう</p>
-              </div>
-              <div>
+              </HashLink>
+              <HashLink to="/chotohaya">
                 <img
                   src="/images/members/chihiro.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">3M ちひろ</p>
-              </div>
+              </HashLink>
             </div>
           </SplideSlide>
           <SplideSlide>
@@ -78,22 +79,22 @@ const Members = () => {
                   <Button type={"btnM"} title={"Works"} url={"/nemu"} />
                 </div>
               </div>
-              <div>
+              <HashLink to="/nemu">
                 <img
                   src="/images/members/hamu.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">3M はむ</p>
-              </div>
-              <div>
+              </HashLink>
+              <HashLink to="/nemu">
                 <img
                   src="/images/members/moneko.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">2N もねこ</p>
-              </div>
+              </HashLink>
             </div>
           </SplideSlide>
           <SplideSlide>
@@ -113,30 +114,30 @@ const Members = () => {
                   <Button type={"btnM"} title={"Works"} url={"/rising-sun"} />
                 </div>
               </div>
-              <div>
+              <HashLink to="/rising-sun">
                 <img
                   src="/images/members/sana.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">2N さな</p>
-              </div>
-              <div>
+              </HashLink>
+              <HashLink to="/rising-sun">
                 <img
                   src="/images/members/log.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">2M log</p>
-              </div>
-              <div>
+              </HashLink>
+              <HashLink to="/rising-sun">
                 <img
                   src="/images/members/mafu.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">2M まふ</p>
-              </div>
+              </HashLink>
             </div>
           </SplideSlide>
           <SplideSlide>
@@ -156,22 +157,22 @@ const Members = () => {
                   />
                 </div>
               </div>
-              <div>
+              <HashLink to="/korikori-jonjon">
                 <img
                   src="/images/members/eitarou.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">1M 栄太郎</p>
-              </div>
-              <div>
+              </HashLink>
+              <HashLink to="/korikori-jonjon">
                 <img
                   src="/images/members/sasaking.png"
                   alt=""
                   className="h-40 w-40"
                 />
                 <p className="mt-3">1M ささKING</p>
-              </div>
+              </HashLink>
             </div>
           </SplideSlide>
         </SplideTrack>
