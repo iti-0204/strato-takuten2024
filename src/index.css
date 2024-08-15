@@ -109,6 +109,27 @@ code {
   transform: rotate(-45deg);
   background-color: white;
 }
+
+/*  */
+.menu-content ul li a :checked ~ .menu-btn span {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /*メニューオープン時は真ん中の線を透明にする*/
+}
+.menu-content ul li a :checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background-color: white;
+}
+.menu-content ul li a :checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background-color: white;
+}
+
 #menu-btn-check {
   display: none;
 }
@@ -123,22 +144,31 @@ code {
   background-color: #fc840d;
 }
 .menu-content ul {
-  padding: 70px 10px 0;
+  /* padding: 70px 10px 0; */
+  padding-top: 16vh;
 }
 .menu-content ul li {
-  border-bottom: solid 1px #ffffff;
+  /* border-bottom: solid 1px #ffffff; */
   list-style: none;
 }
 .menu-content ul li a {
   display: block;
   width: 100%;
-  font-size: 15px;
+  font-size: 20px;
   box-sizing: border-box;
   color: #ffffff;
   text-decoration: none;
-  padding: 9px 15px 10px 0;
+  /* padding: 9px 15px 10px 17%; */
+  padding-left: 17%;
+  padding-bottom: 5vh;
   position: relative;
 }
+@media screen and (min-width: 425px) {
+  .menu-content ul li a {
+    font-size: 30px;
+  }
+}
+
 .menu-content ul li a::before {
   content: "";
   width: 7px;
@@ -163,5 +193,9 @@ code {
 }
 
 #menu-btn-check:checked ~ .menu-content {
+  left: 13%; /*メニューを画面内へ*/
+}
+
+.menu-content ul li a :checked ~ .menu-content {
   left: 13%; /*メニューを画面内へ*/
 }

@@ -3,6 +3,12 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
+  // ハンバーガーを閉じる関数
+  const onClicknavi = () => {
+    let element = document.getElementById("menu-btn-check");
+    element.checked = false;
+  };
+
   return (
     <>
       {/* pc版 */}
@@ -43,7 +49,7 @@ const Header = () => {
         </nav>
       </header>
       {/* tablet,sp版 */}
-      <header>
+      <header className="pc:hidden">
         <div class="hamburger-menu">
           <input type="checkbox" id="menu-btn-check" />
           <label for="menu-btn-check" class="menu-btn">
@@ -52,18 +58,25 @@ const Header = () => {
           <div class="menu-content">
             <ul className="font-en tracking-en font-bold">
               <li>
-                <HashLink to="/#works">Works</HashLink>
+                <HashLink to="/#works" onClick={onClicknavi}>
+                  Works
+                </HashLink>
               </li>
               <li>
-                <HashLink to="/#flow">Flow</HashLink>
+                <HashLink to="/#flow" onClick={onClicknavi}>
+                  Flow
+                </HashLink>
               </li>
               <li>
-                <HashLink to="/#members">Members</HashLink>
+                <HashLink to="/#members" onClick={onClicknavi}>
+                  Members
+                </HashLink>
               </li>
               <li>
                 <HashLink
                   to="https://geikou-takuten.com/"
                   className="text-jp tracking-jp font-bold flex items-center gap-2"
+                  onClick={onClicknavi}
                 >
                   {/* <FaExternalLinkAlt /> */}
                   卓展サイトへ
