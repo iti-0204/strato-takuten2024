@@ -92,7 +92,6 @@ const korikorijonjon = {
 };
 
 function App() {
-  console.log(chotohaya.title);
   return (
     <BrowserRouter>
       <Routes>

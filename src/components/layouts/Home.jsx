@@ -30,6 +30,8 @@ const Home = () => {
   } else if (isTablet) {
     lottieSrc = TabletAnimation;
     lottieScale = " scale-[1.7]";
+  } else {
+    lottieScale = " scale-[1.5]";
   }
 
   // LottieComplete時の処理
@@ -37,7 +39,6 @@ const Home = () => {
     var firstView = document.getElementById("first-view");
     var fadeIn = document.getElementById("mainvisual");
     firstView.classList.add("delete");
-    console.log(fadeIn);
     fadeIn.classList.add("fadeIn");
   };
 
@@ -49,10 +50,8 @@ const Home = () => {
           loop={false}
           src={lottieSrc}
           onEvent={(event) => {
-            console.log(event);
             if (event === "complete") {
               doSomething();
-              console.log(lottieSrc);
             }
           }}
           id="first-view"
