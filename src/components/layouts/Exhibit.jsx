@@ -33,6 +33,7 @@ const Exhibit = ({ img, workNum, names, title, url }) => {
             {workNum === 2 && (
               <div className="mb-5">
                 <Button type={"btnM"} title={"webサイト"} url={url.web} />
+                <p className="text-xs text-center">(PCでご覧ください)</p>
               </div>
             )}
             <Button

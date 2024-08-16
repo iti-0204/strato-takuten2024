@@ -77,7 +77,7 @@ const korikorijonjon = {
     member1: "/images/members/eitarou.png",
     member2: "/images/members/sasaking.png",
   },
-  workNum: 1,
+  workNum: 2,
   names: {
     team: "コリコリジョンジョン",
     member1: "1M 栄太郎",
@@ -87,7 +87,7 @@ const korikorijonjon = {
   url: {
     figma:
       "https://www.figma.com/proto/1IByLziOx5zNWvSkptAT2y/ui-korikorijonjon?page-id=0%3A1&node-id=80-816&viewport=1253%2C4958%2C0.43&t=5tqnhdFvLNIlqHCq-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=80%3A816&show-proto-sidebar=1",
-    web: "",
+    web: "https://iti-0204.github.io/clocide/",
   },
 };
 
